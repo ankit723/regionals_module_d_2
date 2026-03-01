@@ -72,20 +72,22 @@ export default function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.button
+            <motion.a
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="px-10 py-4 rounded-full bg-gradient-to-r from-cyan to-blue text-white font-semibold text-sm tracking-wide hover:shadow-[0_0_40px_rgba(0,212,255,0.3)] transition-shadow duration-300"
             >
               Request a Consultation
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="px-10 py-4 rounded-full border border-white/10 text-white/80 font-medium text-sm tracking-wide hover:bg-white/5 transition-all duration-300"
             >
-              Download Catalog
-            </motion.button>
+              Contact Us
+            </motion.a>
           </div>
         </motion.div>
       </motion.div>

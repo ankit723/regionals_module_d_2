@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Products", href: "#products" },
   { label: "Impact", href: "#stats" },
   { label: "Sustainability", href: "#sustainability" },
-  { label: "Contact", href: "#cta" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -69,7 +69,7 @@ export default function Navbar() {
               </motion.a>
             ))}
             <motion.a
-              href="#cta"
+              href="#contact"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}

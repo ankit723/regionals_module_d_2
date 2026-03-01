@@ -7,20 +7,32 @@ const footerLinks = [
   {
     title: "Products",
     links: [
-      "Lithium Batteries",
-      "Solar Panels",
-      "UPS Systems",
-      "EV Charging",
-      "Power Banks",
+      { label: "Lithium Batteries", href: "#products" },
+      { label: "Solar Panels", href: "#products" },
+      { label: "UPS Systems", href: "#products" },
+      { label: "EV Charging", href: "#products" },
+      { label: "Power Banks", href: "#products" },
     ],
   },
   {
     title: "Company",
-    links: ["About Us", "Careers", "Press", "Blog", "Contact"],
+    links: [
+      { label: "About Us", href: "#timeline" },
+      { label: "Careers", href: "#contact" },
+      { label: "Press", href: "#" },
+      { label: "Blog", href: "#" },
+      { label: "Contact", href: "#contact" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Documentation", "Support", "Partners", "Case Studies", "FAQ"],
+    links: [
+      { label: "Documentation", href: "#" },
+      { label: "Support", href: "#contact" },
+      { label: "Partners", href: "#contact" },
+      { label: "Case Studies", href: "#" },
+      { label: "FAQ", href: "#" },
+    ],
   },
 ];
 
@@ -108,12 +120,12 @@ export default function Footer() {
               </h4>
               <ul className="flex flex-col gap-2.5">
                 {group.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-muted text-sm hover:text-cyan transition-colors duration-300"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}

@@ -6,6 +6,7 @@ import Stats from "./components/stats";
 import Testimonials from "./components/testimonials";
 import Sustainability from "./components/sustainability";
 import CTA from "./components/cta";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 import SectionDivider from "./components/section-divider";
 
@@ -18,7 +19,7 @@ export default function Home() {
       <Timeline />
       <SectionDivider variant="cyan" />
       <Products />
-      <SectionDivider variant="gold" />
+      <SectionDivider variant="cyan" />
       <Stats />
       <SectionDivider variant="cyan" />
       <Testimonials />
@@ -26,6 +27,8 @@ export default function Home() {
       <Sustainability />
       <SectionDivider variant="cyan" />
       <CTA />
+      <SectionDivider variant="gold" />
+      <Contact />
       <Footer />
     </>
   );
